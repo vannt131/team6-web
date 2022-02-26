@@ -35,7 +35,7 @@ a{
     text-decoration: none;
     color: #242424;
 }
-.logo > a{
+a:hover{
     text-decoration: none;
 }
 .header #nav{
@@ -52,7 +52,6 @@ a{
     display: inline-block;
 }
 #nav > li > a{
-    /*color: #fafafa;*/
     text-transform: uppercase;
 }
 #nav li a{
@@ -66,6 +65,7 @@ a{
 }
 #nav > li:hover > a{
     color: #53d04a;
+    transform: scale(1.2);
     transition: all 400ms;
 }
 #nav .subnav{
@@ -100,7 +100,7 @@ a{
 }
 .search .search-btn:hover{
     color: #53d04a;
-    /*background-color: #e1f6e1;*/
+    transform: scale(1.2);
     transition: all 400ms;
 }
 .section{
@@ -117,7 +117,6 @@ a{
     float: left;
     width: 66.67%;
     padding-right: 15px;
-    background-color: #2aabd2;
 }
 .sidebar{
     float: left;
@@ -127,6 +126,32 @@ a{
 .entry{
     float: left;
     width: 100%;
+}
+.entry .box{
+    padding: 10px;
+    margin: 10px;
+}
+.entry .box img{
+    border: 1px solid blue;
+    padding: 5px;
+}
+.entry .box img:hover{
+    transform: scale(1.1);
+    transition: all 500ms;
+}
+.entry .box h2:hover{
+    color: #53d04a;
+    transition: all 400ms;
+}
+.entry .box .btn{
+    float: right;
+    background-color: #a9e898;
+    margin-top: -50px;
+}
+.entry .box .btn:hover{
+    background-color: #53d04a;
+    transform: scale(1.1);
+    transition: all 400ms;
 }
 .sidebar-block{
     float: left;
