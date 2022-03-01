@@ -4,7 +4,7 @@
     margin: 0;
 }
 body{
-    background-color: #fafafa;
+    background-color: #686868FF;
     color: #242424;
     font-size: 14px;
     line-height: 1.25;
@@ -16,9 +16,9 @@ img{
     max-width: 100%;
 }
 .header{
-    width: 1250px;
+    width: 1200px;
     height: 310px;
-    /*background-color: #53d04a;*/
+    background-color: #fafafa;
     line-height: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -35,7 +35,7 @@ a{
     text-decoration: none;
     color: #242424;
 }
-.logo > a{
+a:hover{
     text-decoration: none;
 }
 .header #nav{
@@ -52,7 +52,6 @@ a{
     display: inline-block;
 }
 #nav > li > a{
-    /*color: #fafafa;*/
     text-transform: uppercase;
 }
 #nav li a{
@@ -66,13 +65,14 @@ a{
 }
 #nav > li:hover > a{
     color: #53d04a;
+    transform: scale(1.2);
     transition: all 400ms;
 }
 #nav .subnav{
     display: none;
     position: absolute;
     background-color: #fafafa;
-    /*box-shadow: 0 0 10px #242424;*/
+    box-shadow: 0 0 10px #242424;
     min-width: 150px;
 }
 #nav .subnav a{
@@ -96,11 +96,12 @@ a{
     line-height: 53px;
     background-color: #fafafa;
     padding: 0 20px;
+    margin-right: 100px;
     border: none;
 }
 .search .search-btn:hover{
     color: #53d04a;
-    /*background-color: #e1f6e1;*/
+    transform: scale(1.2);
     transition: all 400ms;
 }
 .section{
@@ -110,6 +111,7 @@ a{
 .container{
     float: none;
     width: 1200px;
+    background-color: #fafafa;
     margin-left: auto;
     margin-right: auto;
 }
@@ -117,7 +119,6 @@ a{
     float: left;
     width: 66.67%;
     padding-right: 15px;
-    background-color: #2aabd2;
 }
 .sidebar{
     float: left;
@@ -128,6 +129,7 @@ a{
     float: left;
     width: 100%;
 }
+
 .sidebar-block{
     float: left;
     width: 100%;
