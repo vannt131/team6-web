@@ -129,30 +129,30 @@ a:hover{
     width: 100%;
 }
 
-.entry .box2{
+.entry .box{
     background-color: #fafafa;
     padding: 10px;
     margin: 10px;
 }
-.entry .box2 img{
+.entry .box img{
     border: 1px solid blue;
     padding: 5px;
 }
-.entry .box2 img:hover{
+.entry .box img:hover{
     transform: scale(1.1);
     transition: all 500ms;
 }
-.entry .box2 h2:hover{
+.entry .box h2:hover{
     color: #53d04a;
     transform: scale(1.02);
     transition: all 400ms;
 }
-.entry .box2 .btn{
+.entry .box .btn{
     float: right;
     background-color: #a9e898;
     margin-top: -50px;
 }
-.entry .box2 .btn:hover{
+.entry .box .btn:hover{
     background-color: #53d04a;
     transform: scale(1.1);
     transition: all 400ms;

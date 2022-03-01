@@ -128,7 +128,34 @@ a:hover{
     float: left;
     width: 100%;
 }
-
+.entry .box{
+    background-color: #fafafa;
+    padding: 10px;
+    margin: 10px;
+}
+.entry .box img{
+    border: 1px solid blue;
+    padding: 5px;
+}
+.entry .box img:hover{
+    transform: scale(1.1);
+    transition: all 500ms;
+}
+.entry .box h2:hover{
+    color: #53d04a;
+    transform: scale(1.02);
+    transition: all 400ms;
+}
+.entry .box .btn{
+    float: right;
+    background-color: #a9e898;
+    margin-top: -50px;
+}
+.entry .box .btn:hover{
+    background-color: #53d04a;
+    transform: scale(1.1);
+    transition: all 400ms;
+}
 .sidebar-block{
     float: left;
     width: 100%;
