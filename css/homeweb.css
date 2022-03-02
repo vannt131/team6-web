@@ -145,6 +145,9 @@ a:hover{
     font-weight: 600;
     margin-left: 60px;
 }
+.entry .news .right h2 a{
+    color: #bb942f;
+}
 .entry .box{
     background-color: #fafafa;
     padding: 10px;
