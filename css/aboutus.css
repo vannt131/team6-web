@@ -41,6 +41,10 @@ a:hover{
     line-height: 54px;
     display: inline-block;
 }
+#nav .active{
+    color: #53d04a;
+    transform: scale(1.2);
+}
 #nav, .subnav{
     list-style-type: none;
 }

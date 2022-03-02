@@ -41,6 +41,10 @@ a:hover{
     line-height: 54px;
     display: inline-block;
 }
+#nav .active{
+    color: #53d04a;
+    transform: scale(1.2);
+}
 #nav, .subnav{
     list-style-type: none;
 }
@@ -129,6 +133,18 @@ a:hover{
     width: 100%;
 }
 
+.entry .new-paper .new-crown{
+    float: left;
+    color: red;
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: 20px;
+}
+.entry .new-paper .text-new{
+    color: red;
+    font-weight: 600;
+    margin-left: 60px;
+}
 .entry .box{
     background-color: #fafafa;
     padding: 10px;

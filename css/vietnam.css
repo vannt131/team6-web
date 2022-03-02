@@ -41,6 +41,10 @@ a:hover{
     line-height: 54px;
     display: inline-block;
 }
+#nav .active-c{
+    color: #53d04a;
+    transform: scale(1.2);
+}
 #nav, .subnav{
     list-style-type: none;
 }
@@ -73,6 +77,9 @@ a:hover{
     background-color: #fafafa;
     box-shadow: 0 0 10px #242424;
     min-width: 150px;
+}
+#nav .subnav .active{
+    color: #53d04a;
 }
 #nav .subnav a{
     padding: 0 20px;
