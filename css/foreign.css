@@ -16,7 +16,7 @@ img{
 }
 .header{
     width: 1200px;
-    height: 310px;
+    height: 900px;
     background-color: #fafafa;
     line-height: 50px;
     margin-left: auto;
@@ -42,7 +42,7 @@ a:hover{
     display: inline-block;
 }
 #nav .active-c{
-    color: #53d04a;
+    color: #bb942f;
     transform: scale(1.2);
 }
 #nav, .subnav{
@@ -67,7 +67,7 @@ a:hover{
     display: block;
 }
 #nav > li:hover > a{
-    color: #53d04a;
+    color: #bb942f;
     transform: scale(1.2);
     transition: all 400ms;
 }
@@ -79,7 +79,7 @@ a:hover{
     min-width: 150px;
 }
 #nav .subnav .active{
-    color: #53d04a;
+    color: #bb942f;
 }
 #nav .subnav a{
     padding: 0 20px;
@@ -90,8 +90,8 @@ a:hover{
     font-size: 10px;
 }
 #nav .subnav li:hover a{
-    color: #53d04a;
-    background-color: #e1f6e1;
+    color: #bb942f;
+    background-color: #eeebeb;
     transition: all 400ms;
 }
 .search{
@@ -106,7 +106,7 @@ a:hover{
     border: none;
 }
 .search .search-btn:hover{
-    color: #53d04a;
+    color: #bb942f;
     transform: scale(1.2);
     transition: all 400ms;
 }

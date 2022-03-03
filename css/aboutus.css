@@ -42,7 +42,7 @@ a:hover{
     display: inline-block;
 }
 #nav .active{
-    color: #53d04a;
+    color: #bb942f;
     transform: scale(1.2);
 }
 #nav, .subnav{
@@ -67,7 +67,7 @@ a:hover{
     display: block;
 }
 #nav > li:hover > a{
-    color: #53d04a;
+    color: #bb942f;
     transform: scale(1.2);
     transition: all 400ms;
 }
@@ -87,8 +87,8 @@ a:hover{
     font-size: 10px;
 }
 #nav .subnav li:hover a{
-    color: #53d04a;
-    background-color: #e1f6e1;
+    color: #bb942f;
+    background-color: #eeebeb;
     transition: all 400ms;
 }
 .search{
@@ -103,7 +103,7 @@ a:hover{
     border: none;
 }
 .search .search-btn:hover{
-    color: #53d04a;
+    color: #bb942f;
     transform: scale(1.2);
     transition: all 400ms;
 }
