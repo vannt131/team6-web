@@ -186,5 +186,35 @@ a:hover{
     float: left;
     width: 100%;
     padding-left: 10px;
-    background-color: #a9e898;
+}
+.box-us{
+    margin: 50px 0 350px;
+}
+.box-us img{
+    border-radius: 20px;
+}
+.box-us .top{
+    float: left;
+    position: relative;
+}
+.box-us .top .left img{
+    position: absolute;
+    top: 20px;
+}
+.box-us .top .left img:hover{
+    top: 10px;
+    transition: all 900ms;
+}
+.box-us .bot{
+    position: absolute;
+    top: 280px;
+    left: 150px;
+}
+.box-us .bot:hover{
+    top: 270px;
+    transition: all 900ms;
+}
+.box-us .top .right a h2:hover{
+    color: #bb942f;
+    transition: all 400ms;
 }
