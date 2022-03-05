@@ -223,3 +223,10 @@ a:hover{
     color: #bb942f;
     transition: all 500ms;
 }
+
+.footer .container{
+    background-color: #2aabd2;
+}
+.box-map{
+    margin-left: -30px;
+}
