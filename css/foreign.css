@@ -135,7 +135,27 @@ a:hover{
     float: left;
     width: 100%;
 }
-
+.entry .box{
+    background-color: #fafafa;
+    line-height: 1.5;
+    margin: 30px 0;
+}
+.entry .box img:hover{
+    transform: scale(1.05);
+    transition: all 500ms;
+}
+.entry .box a h2:hover{
+    color: #bb942f;
+    transition: all 500ms;
+}
+.entry .box a h4:hover{
+    color: #bb942f;
+    transition: all 500ms;
+}
+.entry .box h2:hover{
+    color: #bb942f;
+    transition: all 400ms;
+}
 .sidebar-block{
     float: left;
     width: 100%;

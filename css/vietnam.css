@@ -144,8 +144,13 @@ a:hover{
     transform: scale(1.05);
     transition: all 500ms;
 }
-.entry .box h2{
-
+.entry .box a h2:hover{
+    color: #bb942f;
+    transition: all 500ms;
+}
+.entry .box a h4:hover{
+    color: #bb942f;
+    transition: all 500ms;
 }
 .entry .box h2:hover{
     color: #bb942f;

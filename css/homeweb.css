@@ -176,9 +176,9 @@ a:hover{
 
 .entry .box a h2:hover{
     color: #bb942f;
-    transition: all 400ms;
+    transition: all 500ms;
 }
-.entry .box .bot a h4:hover{
+.entry .box a h4:hover{
     color: #bb942f;
     transition: all 500ms;
 }
