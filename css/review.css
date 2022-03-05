@@ -107,6 +107,7 @@ a:hover{
     transform: scale(1.2);
     transition: all 500ms;
 }
+
 .section{
     float:left;
     width: 100%;
@@ -123,16 +124,16 @@ a:hover{
     width: 66.67%;
     padding-right: 15px;
 }
-.sidebar{
-    float: left;
-    width: 33.33%;
-    padding-left: 15px;
-}
 .entry{
     float: left;
     width: 100%;
 }
 
+.sidebar{
+    float: left;
+    width: 33.33%;
+    padding-left: 15px;
+}
 .sidebar-block{
     float: left;
     width: 100%;
