@@ -67,9 +67,9 @@ a:hover{
     display: block;
 }
 #nav > li:hover > a{
-    color: #53d04a;
+    color: #bb942f;
     transform: scale(1.2);
-    transition: all 400ms;
+    transition: all 500ms;
 }
 #nav .subnav{
     display: none;
@@ -89,7 +89,7 @@ a:hover{
 #nav .subnav li:hover a{
     color: #bb942f;
     background-color: #eeebeb;
-    transition: all 400ms;
+    transition: all 500ms;
 }
 .search{
     float: right;
@@ -105,7 +105,7 @@ a:hover{
 .search .search-btn:hover{
     color: #bb942f;
     transform: scale(1.2);
-    transition: all 400ms;
+    transition: all 500ms;
 }
 .section{
     float:left;
