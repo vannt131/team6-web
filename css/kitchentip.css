@@ -139,3 +139,20 @@ a:hover{
     padding-left: 10px;
     background-color: #a9e898;
 }
+.part-one.top{
+    width: 100%;
+    padding: 2px;
+    border-bottom: grey;
+}
+.part-one.right{
+    width: 100%;
+    padding: 2px;
+    border-bottom: grey;
+}
+.part-two.row{
+    width: 100%;
+    padding: 0px 5px 5px 5px;
+}
+.clip{
+    padding: 2px;
+}
