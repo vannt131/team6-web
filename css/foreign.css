@@ -4,7 +4,7 @@
     margin: 0;
 }
 body{
-    background-color: #686868FF;
+    background-color: #fafafa;
     color: #242424;
     font-size: 14px;
     line-height: 1.25;
@@ -167,4 +167,34 @@ a:hover{
     float: left;
     width: 100%;
     padding-left: 10px;
+}
+
+.footer{
+    display: inline-block;
+    width: 100%;
+    background-color: #949292;
+}
+.footer .container{
+    background-color: #949292;
+}
+.contact .stk-text{
+    display: inline-block;
+    padding-left: 10px;
+}
+.sticky{
+    font-size: 40px;
+    margin: 10px;
+}
+.box-stk{
+    display: inline-block;
+    margin: 10px;
+}
+.stk-face, .stk-you, .stk-ins, .stk-twit{
+    color: #fafafa;
+    background-color: #242424;
+    padding: 10px;
+    border-radius: 100px;
+}
+.stk-face:hover, .stk-you:hover, .stk-ins:hover, .stk-twit:hover{
+    background-color: #4f4b4b;
 }
