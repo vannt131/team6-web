@@ -194,7 +194,27 @@ a:hover{
 .sidebar-block{
     float: left;
     width: 100%;
-    padding-left: 10px;
+    padding-left: 20px;
+}
+.hashtag .tag{
+    background-color: #dad6d6;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.hashtag .tag:hover{
+    background-color: #e3d7d7;
+    cursor: pointer;
+}
+.hashtag .tag a{
+    color: #242424;
+}
+.hashtag .tag:hover a{
+    text-decoration: none;
+    color: #bb942f;
+}
+.highlights .box{
+    padding: 30px;
 }
 
 .box-us{
