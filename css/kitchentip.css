@@ -232,13 +232,13 @@ a:hover{
     width: 100%;
     box-sizing: border-box;
     padding: 20px 0px;
-    border-bottom: 1px solid #242424;
+    border-bottom: 1px solid #aaaaaa;
 }
 .part-two{
     box-sizing: border-box;
 }
 .part-one{
-    border-bottom: 1px solid #242424;
+    border-bottom: 1px solid #aaaaaa;
     box-sizing: border-box;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -259,4 +259,16 @@ a:hover{
 }
 .stk-face:hover, .stk-you:hover, .stk-ins:hover, .stk-twit:hover{
     background-color: #4f4b4b;
+}
+.part-one .top a h3:hover{
+    color: #bb942f;
+    transition: all 500ms;
+}
+.part-one .right a h4:hover{
+    color: #bb942f;
+    transition: all 500ms;
+}
+.part-two .row a h4:hover{
+    color: #bb942f;
+    transition: all 500ms;
 }

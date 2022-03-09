@@ -236,3 +236,7 @@ a:hover{
     box-sizing: border-box;
     border-bottom: 1px solid #aaaaaa;
 }
+.review a h3:hover{
+    color: #bb942f;
+    transition: all 500ms;
+}
