@@ -123,6 +123,7 @@ a:hover{
     transition: all 500ms;
 }
 
+
 .section{
     float:left;
     width: 100%;
@@ -229,6 +230,10 @@ a:hover{
 }
 .highlights .box{
     padding: 30px;
+}
+.highlights .box a:hover h4{
+    color: #bb942f;
+    transition: all 500ms;
 }
 
 .box-us{
