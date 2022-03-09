@@ -226,11 +226,14 @@ a:hover{
 .links li{
     margin-left: 10px;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 20px;
 }
-.part-two row{
+.links li:hover a{
+    color: #bb942f;
+    transition: all 500ms;
+}
+.part-two .row{
     width: 100%;
-    box-sizing: border-box;
     padding: 20px 0px;
     border-bottom: 1px solid #aaaaaa;
 }
@@ -238,11 +241,13 @@ a:hover{
     box-sizing: border-box;
 }
 .part-one{
+    margin-top: 20px;
     border-bottom: 1px solid #aaaaaa;
-    box-sizing: border-box;
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+
 .sticky{
     font-size: 40px;
     margin: 10px;
