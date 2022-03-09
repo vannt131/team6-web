@@ -192,3 +192,9 @@ a:hover{
 .stk-face:hover, .stk-you:hover, .stk-ins:hover, .stk-twit:hover{
     background-color: #4f4b4b;
 }
+.section{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
