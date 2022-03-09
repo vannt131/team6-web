@@ -150,6 +150,21 @@ a:hover{
     float: left;
     width: 100%;
 }
+.box .number-page, .next-page{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #e3d7d7;
+}
+.box #page-active{
+    color: #fafafa;
+    background-color: #bb942f;
+}
+.box .number-page:hover, .next-page:hover{
+    color: #fafafa;
+    background-color: #bb942f;
+    transition: all 500ms;
+}
 
 .sidebar{
     float: left;
