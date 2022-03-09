@@ -203,6 +203,31 @@ a:hover{
     display: inline-block;
     padding-left: 10px;
 }
+.clip{
+    max-width: 100%;
+    padding-left: 5px;
+    background-color: #fafafa;
+}
+.links li{
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.part-two row{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    border-bottom: 1px solid #242424;
+}
+.part-two{
+    box-sizing: border-box;
+}
+.part-one{
+    border-bottom: 1px solid #242424;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 .sticky{
     font-size: 40px;
     margin: 10px;

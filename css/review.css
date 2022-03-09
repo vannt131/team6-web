@@ -215,3 +215,9 @@ a:hover{
 .stk-face:hover, .stk-you:hover, .stk-ins:hover, .stk-twit:hover{
     background-color: #4f4b4b;
 }
+.review{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #aaaaaa;
+}
