@@ -16,20 +16,20 @@ img{
 }
 
 .header{
-    width: 1200px;
-    height: 900px;
+    width: 100%;
     background-color: #fafafa;
     line-height: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 0 20px 0;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0 1px 1px, rgba(0, 0, 0, 0.07) 0 2px 2px, rgba(0, 0, 0, 0.07) 0 4px 4px, rgba(0, 0, 0, 0.07) 0 8px 8px, rgba(0, 0, 0, 0.07) 0 16px 16px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 .header .container .logo{
-    margin-bottom: 30px;
-    text-align: center;
-}
-.logo .imglg1,.logo .imglg2{
-    border-radius: 90px;
-    margin-bottom: 30px;
+    float: left;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 a{
     text-decoration: none;
@@ -62,7 +62,7 @@ a:hover{
     text-decoration: none;
     font-weight: 500;
     display: block;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 #nav li:hover .subnav{
     display: block;
@@ -76,7 +76,7 @@ a:hover{
     display: none;
     position: absolute;
     background-color: #fafafa;
-    box-shadow: 0 0 10px #242424;
+    box-shadow: rgba(0, 0, 0, 0.07) 0 1px 1px, rgba(0, 0, 0, 0.07) 0 2px 2px, rgba(0, 0, 0, 0.07) 0 4px 4px, rgba(0, 0, 0, 0.07) 0 8px 8px, rgba(0, 0, 0, 0.07) 0 16px 16px;
     min-width: 150px;
 }
 #nav .subnav .active{
@@ -109,6 +109,28 @@ a:hover{
 .search .search-btn:hover{
     color: #bb942f;
     transform: scale(1.2);
+    transition: all 500ms;
+}
+#s-text{
+    position: relative;
+}
+.ip-search{
+    padding: 0 50px 0 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.s-icon{
+    position: absolute;
+    top: 10%;
+    right: -38px;
+    border-radius: 20px;
+    padding: 0 20px 0 0;
+}
+.ti-search{
+    font-size: 20px;
+}
+#s-text .ti-search:hover{
+    color: #bb942f;
     transition: all 500ms;
 }
 
@@ -159,6 +181,7 @@ a:hover{
     transition: all 400ms;
 }
 
+
 .sidebar{
     float: left;
     width: 33.33%;
@@ -167,7 +190,27 @@ a:hover{
 .sidebar-block{
     float: left;
     width: 100%;
-    padding-left: 10px;
+    padding-left: 20px;
+}
+.hashtag .tag{
+    background-color: #dad6d6;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.hashtag .tag:hover{
+    background-color: #e3d7d7;
+    cursor: pointer;
+}
+.hashtag .tag a{
+    color: #242424;
+}
+.hashtag .tag:hover a{
+    text-decoration: none;
+    color: #bb942f;
+}
+.highlights .box{
+    padding: 30px;
 }
 
 .footer{

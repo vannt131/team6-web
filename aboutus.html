@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Blogs Ẩm thực-About Us</title>
+    <title>Food Blogs-About Us</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -15,13 +15,11 @@
 <body>
 <header class="header">
     <div class="container">
-        <div class="logo">
+        <div class="logo col-md-3">
             <a class="imglg" href="#"><img src="imgs/logo.png" alt="" width="800px"></a>
-            <span><img class="imglg1" src="imgs/logo1.png" alt="" width="90px"></span>
-            <span><img class="imglg2" src="imgs/logo2.png" alt="" height="90px"></span>
         </div>
-        <div class="col-md-12 text-center">
-            <ul id="nav">
+        <div class="col-md-9">
+            <ul id="nav" class="col-md-9">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">
                     Cuisine
@@ -36,14 +34,20 @@
                 <li><a href="#">Kitchen Tips</a></li>
                 <li><a class="active" href="#">About us</a></li>
             </ul>
-            <div class="search">
-                <button class="search-btn" type="submit"><i class="ti-search"></i></button>
+            <div class="search col-md-3" id="s-icon" onclick="block_search()">
+                <button class="search-btn" type="submit" title="Search"><i class="ti-search"></i></button>
+            </div>
+            <div class="search col-md-3" id="s-text" style="display: none;">
+                <input class="ip-search" type="text" name="search" placeholder="Search...">
+                <a class="s-icon" href="#">
+                    <i class="ti-search" onclick="none_search()" title="Search"></i>
+                </a>
             </div>
         </div>
 
     </div>
 </header>
-<section class="section main">
+<section class="section main" style="margin-top: 120px">
     <div class="container">
         <article class="content">
             <div class="entry">
@@ -119,5 +123,25 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    function active(){
+        var p_active = document.getElementById("active");
+        p_active.style.color = "#bb942f";
+        p_active.style.transform = "scale(1.2)";
+    }
+    function block_search(){
+        var b_ipsearch = document.getElementById("s-text");
+        b_ipsearch.style.display = "block";
+        var n_searchbtn = document.getElementById("s-icon");
+        n_searchbtn.style.display = "none";
+    }
+    function none_search(){
+        var b_searchbtn = document.getElementById("s-icon");
+        b_searchbtn.style.display = "block";
+        var n_ipsearch = document.getElementById("s-text");
+        n_ipsearch.style.display = "none";
+    }
+</script>
 </body>
 </html>

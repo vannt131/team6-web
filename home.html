@@ -2,9 +2,371 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Food Blogs-Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico">
+
+    <link rel="stylesheet" href="vendors/bootstrap3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="logo col-md-3">
+                <a class="imglg" href="#"><img src="imgs/logo.png" alt="" width="800px"></a>
+            </div>
+            <div class="col-md-9">
+                <ul id="nav" class="col-md-9">
+                    <li><a id="active" href="#" onclick="active()">Home</a></li>
+                    <li><a href="#">
+                        Cuisine
+                        <i class="nav-arrow-down ti-angle-down"></i>
+                    </a>
+                        <ul class="subnav">
+                            <li><a href="#">VietNam</a></li>
+                            <li><a href="#">Foreign</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Review</a></li>
+                    <li><a href="#">Kitchen Tips</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+                <div class="search col-md-3" id="s-icon" onclick="block_search()">
+                    <button class="search-btn" type="submit" title="Search"><i class="ti-search"></i></button>
+                </div>
+                <div class="search col-md-3" id="s-text" style="display: none;">
+                    <input class="ip-search" type="text" name="search" placeholder="Search...">
+                    <a class="s-icon" href="#">
+                        <i class="ti-search" onclick="none_search()" title="Search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container" style="margin-top: 120px;">
+        <img src="imgs/home/food-blog.png" width="1200px" alt="">
+    </div>
+    <section class="section main">
+        <div class="container">
+            <article class="content">
+                <div class="entry">
+                    <div class="main-menu">
+                        <i class="new-crown ti-crown"></i>
+                        <h2 class="text-new">New</h2>
+                    </div>
+                    <div class="news row">
+                        <div class="top">
+                            <div class="left col-md-3">
+                                <a href="https://www.youtube.com/watch?v=Ij5roabRbdQ"><img src="imgs/home/home_new.jpg" alt=""></a>
+                            </div>
+                            <div class="right col-md-9">
+                                <a class="text-uppercase" href="https://www.youtube.com/watch?v=Ij5roabRbdQ"><h2>XEM GIẢI THƯỞNG THỰC PHẨM TỐT CUISINE 2021/2022</h2></a>
+                                <p>Ai sẽ là NHÀ HÀNG American Express CỦA NĂM tại Lễ trao giải Ẩm thực Tốt do American Express trao tặng cho ngày 21/22?</p>
+                            </div>
+                        </div>
+                        <div class="bot">
+                            <div class="col-md-3">
+                                <a href="#"><img src="imgs/home/home_new1.jpg" alt=""></a>
+                                <a class="text-center text-uppercase" href="#"><h4>GẶP GỠ NHỮNG NGƯỜI CHIẾN THẮNG DANH MỤC CỦA CHÚNG TÔI</h4></a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#"><img src="imgs/home/home_new2.jpg" alt=""></a>
+                                <a class="text-center text-uppercase" href="#"><h4>TÌM HIỂU AI SẼ MANG LẠI NHỮNG MÓN NGON</h4></a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#"><img src="imgs/home/home_new3.jpg" alt=""></a>
+                                <a class="text-center text-uppercase" href="#"><h4>NHỮNG CHUYỆN ĐỂ XEM 2022</h4></a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#"><img src="imgs/home/home_new4.jpg" alt=""></a>
+                                <a class="text-center text-uppercase" href="#"><h4>GIẢI THƯỞNG THỰC PHẨM TỐT CUISINE 2021/2022 DANH SÁCH ĐẦY ĐỦ CÁC NHÀ HÀNG</h4></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-menu" style="margin: 0 0 30px 20px">
+                        <img src="imgs/home/spoon-and-fork.png" width="50" alt="" style="display: inline-block;margin-top: -10px;">
+                        <h2 style="display: inline-block;color: red">Recipes</h2>
+                    </div>
+                    <div class="box row">
+                        <div class="top">
+                            <div class="left col-md-6">
+                                <a href="#"><img src="https://www.cuisine.co.nz/wp-content/uploads/2022/02/Cuisine-Magazine-Ginny-Grant-Recipe-Seafood-Chowder-uai-810x810.jpg" alt=""></a>
+                            </div>
+                            <div class="right col-md-6">
+                                <a href="#"><h2>HẢI SẢN CHOWDER</h2></a>
+                                <p>Trái cây của biển là một niềm vui thực sự cho khẩu vị và nếu bạn yêu thích hải sản,
+                                    bạn sẽ thích món súp này. Ngoài ra, một tin tuyệt vời cho những người yêu thích kaimoana,
+                                    hải sản rất tốt cho hệ miễn dịch. Thật đáng yêu...</p>
+                            </div>
+                        </div>
+                        <div class="bot">
+                            <div class="col-md-3">
+                                <a href="#"><img src="https://www.cuisine.co.nz/wp-content/uploads/2022/02/Cuisine-Magazine-Tempura-Honey-and-Stem-Ginger-Custard-with-Cream-uai-726x726.jpg" alt=""></a>
+                                <a class="text-uppercase" href="#"><h4>TEMPURA HONEY & STEM-GINGER CUSTARD VỚI KEM DƯỠNG</h4></a>
+                                <p>Tôi yêu mật ong. Nó là sản phẩm của một cộng đồng hiệu quả và vị tha, nó đã được công nhận từ lâu...</p>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#"><img src="https://www.cuisine.co.nz/wp-content/uploads/2022/01/Cuisine-Magazine-Guest-Chef-Matt-Lamber-Recipe-Sauce-Bois-Boudran-uai-810x810.jpg" alt=""></a>
+                                <a class="text-uppercase" href="#"><h4>HÀU VỚI BƠ ỚT</h4></a>
+                                <p>Trong món ăn này, bơ tan chảy và làm chín thịt của hàu, mang lại cho nó một...</p>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#"><img src="https://www.cuisine.co.nz/wp-content/uploads/2022/01/Cuisine-Magazine-Guest-Chef-Matt-Lamber-Recipe-Oysters-with-Chilli-Butter-uai-810x810.jpg" alt=""></a>
+                                <a class="text-uppercase" href="#"><h4>NƯỚC SỐT BOIS BOUDRAN</h4></a>
+                                <p>Một loại nước sốt cổ điển cho cá nướng nhưng ở đây nó rất hiệu quả như một loại nước sốt bít tết sôi động...</p>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#"><img src="https://www.cuisine.co.nz/wp-content/uploads/2022/01/Cuisine-Magazine-Guest-Chef-Matt-Lamber-Recipe-Crudites-with-Oyster-Creme-uai-810x810.jpg" alt=""></a>
+                                <a class="text-uppercase" href="#"><h4>CRUDITÉS VỚI OYSTER CRÈME</h4></a>
+                                <p>Xem bộ sưu tập công thức tại đây...</p>
+                            </div>
+                        </div>
+                        <div class="box row">
+                            <div class="left col-md-6">
+                                <a href="#"><img src="https://www.cuisine.co.nz/wp-content/uploads/2022/02/Cuisine-Magazine-Travel-Bay-of-Plenty-Flavour-Fave-Rolling-farmland-near-Katikati-Bay-of-Plenty-uai-630x630.jpg" alt="" style="margin-bottom: 50px;"></a>
+                            </div>
+                            <div class="right col-md-6">
+                                <a class="text-uppercase" href="#"><h2>SÓNG HƯƠNG VỊ</h2></a>
+                                <p>Khám phá sân sau của chính chúng tôi là khám phá một số trải nghiệm mới thú vị - Debbie Griffiths hướng tới Flavors of Plenty,
+                                    lễ hội ẩm thực mới nhất của New Zealand.</p>
+                            </div>
+                        </div>
+                        <div class="box row">
+                            <div class="left col-md-6">
+                                <a href="#"><img src="https://www.cuisine.co.nz/wp-content/uploads/2022/02/Cuisine-Magazine-Sweet-Treats-Alan-Bartos-Recipe-Choux-Pastries-with-Lemon-Chantilly-and-Macadamia-Praline-uai-810x810.jpg" alt="" style="margin-bottom: 50px;"></a>
+                            </div>
+                            <div class="right col-md-6">
+                                <a class="text-uppercase" href="#"><h2>CHOUX PASTRIES VỚI LEMON CHANTILLY & MACADAMIA PRALINE</h2></a>
+                                <p>Bánh ngọt Choux thắng lớn tại La Patisserie. Rất dễ ăn, đó là món ăn hoàn hảo. Phiên bản này giới thiệu các sản phẩm của Northland với chanh Kerikeri và macadamias.
+                                    Xem bộ sưu tập công thức tại đây.</p>
+                            </div>
+                        </div>
+                        <div class="box row">
+                            <div class="col-md-3">
+                                <a href="#"><img src="https://www.cuisine.co.nz/wp-content/uploads/2022/02/Cuisine-Magazine-Sweet-Treats-Alan-Bartos-Recipe-Marble-Cake-with-Dark-Chocolate-Chantilly-uai-810x810.jpg" alt=""></a>
+                                <a class="text-uppercase" href="#"><h4>Bánh cẩm thạch với sô cô la đen chantilly</h4></a>
+                                <p>Bánh tét lá cẩm có lẽ là món bánh yêu thích nhất của tôi từ thuở bé. Nó được tạo ra với hai hỗn hợp khác nhau...</p>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#"><img src="https://www.cuisine.co.nz/wp-content/uploads/2022/02/Cuisine-Magazine-Sweet-Treats-Alan-Bartos-Recipe-Apple-Tart-uai-810x810.jpg" alt=""></a>
+                                <a class="text-uppercase" href="#"><h4>Bánh tart táo</h4></a>
+                                <p>Bánh tét lá cẩm có lẽ là món bánh yêu thích nhất của tôi từ thuở bé. Nó được tạo ra với hai hỗn hợp khác nhau...</p>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#"><img src="https://www.cuisine.co.nz/wp-content/uploads/2022/02/Cuisine-Magazine-Sweet-Treats-Alan-Bartos-Recipe-Honey-Brioche-uai-810x810.jpg" alt=""></a>
+                                <a class="text-uppercase" href="#"><h4>Bánh mật ong</h4></a>
+                                <p>Brioche là món bánh mì nướng yêu thích của tôi. Thật tuyệt: tuyệt vời cho bữa sáng, tuyệt vời cho...</p>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#"><img src="https://www.cuisine.co.nz/wp-content/uploads/2022/02/Cuisine-Magazine-Annabel-Rose-Langbein-Recipe-Harissa-Spiced-Vongole-uai-810x810.jpg" alt=""></a>
+                                <a class="text-uppercase" href="#"><h4>Harissa - Spiced vongole</h4></a>
+                                <p>Cả hai chúng tôi đều yêu vongole; đó là một trong những thứ rất ngon khi hoàn thành...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <aside class="sidebar">
+                <div class="sidebar-block">
+                    <div class="hashtag row">
+                        <h3 class="text-uppercase" style="color: red;border-bottom: 2px solid red;">Popular Tags</h3>
+                        <div class="tag col-md-3 text-center">
+                            <a href="#">#Food</a>
+                        </div>
+                        <div class="tag col-md-3 text-center">
+                            <a href="#">#banhmy</a>
+                        </div>
+                        <div class="tag col-md-3 text-center">
+                            <a href="#">#haisan</a>
+                        </div>
+                        <div class="tag col-md-3 text-center">
+                            <a href="#">#banh</a>
+                        </div>
 
+                        <div class="tag col-md-6 text-center">
+                            <a href="#">#breakfast</a>
+                        </div>
+                        <div class="tag col-md-6 text-center">
+                            <a href="#">#photooftheday</a>
+                        </div>
+                        <div class="tag col-md-3 text-center">
+                            <a href="#">#hungry</a>
+                        </div>
+                        <div class="tag col-md-3 text-center">
+                            <a href="#">#eat</a>
+                        </div>
+                        <div class="tag col-md-3 text-center">
+                            <a href="#">#foodgasm</a>
+                        </div>
+                        <div class="tag col-md-3 text-center">
+                            <a href="#">#dinner</a>
+                        </div>
+                        <div class="tag col-md-4 text-center">
+                            <a href="#">#sweettooth</a>
+                        </div>
+                        <div class="tag col-md-4 text-center">
+                            <a href="#">#pho</a>
+                        </div>
+                        <div class="tag col-md-4 text-center">
+                            <a href="#">#noodle</a>
+                        </div>
+                    </div>
+                    <div class="highlights row">
+                        <h3 class="text-uppercase" style="color: red;border-bottom: 2px solid red;">Highlights</h3>
+                        <div class="box col-md-12">
+                            <a href="https://www.youtube.com/watch?v=Ij5roabRbdQ"><img src="https://www.cuisine.co.nz/wp-content/uploads/2021/12/CGFA_Insta-page-square_Finalists-part-one-1-1024x1024-1.jpg" alt=""></a>
+                        </div>
+                        <div class="box row">
+                            <div class="col-md-4">
+                                <a href="#"><img src="imgs/vietnam/vietnam1.jpg" height="100" width="100" alt=""></a>
+                            </div>
+                            <div class="col-md-8">
+                                <a class="text-uppercase" href="#"><h4>Đặc trưng của ẩm thực Việt Nam trong lòng khách quốc tế</h4></a>
+                            </div>
+                        </div>
+                        <div class="box row">
+                            <div class="col-md-4">
+                                <a href="#"><img src="imgs/vietnam/vietnam4.jpg" height="100" width="100" alt=""></a>
+                            </div>
+                            <div class="col-md-8">
+                                <a class="text-uppercase" href="#"><h4>Phở - Một thứ quà đặc biệt của Hà Nội</h4></a>
+                            </div>
+                        </div>
+                        <div class="box row">
+                            <div class="col-md-4">
+                                <a href="#"><img src="imgs/foreign/foreign10.gif" height="100" width="100" alt=""></a>
+                            </div>
+                            <div class="col-md-8">
+                                <a class="text-uppercase" href="#"><h4>Ngọt ngào nhất thế giới với Socola Bỉ</h4></a>
+                            </div>
+                        </div>
+                        <div class="box row">
+                            <div class="col-md-4">
+                                <a href="#"><img src="https://dalatpalace.vn/wp-content/uploads/2020/08/an-gi-o-da-lat-22-1024x576.jpg" height="100" width="100" alt=""></a>
+                            </div>
+                            <div class="col-md-8">
+                                <a class="text-uppercase" href="#"><h4>Ăn gì khi đến Đà Lạt? Những món ngon thử 1 lần sẽ khiến bạn nhớ mãi</h4></a>
+                            </div>
+                        </div>
+                        <div class="box row">
+                            <div class="col-md-4">
+                                <a href="#"><img src="https://diachiamthuc.vn/wp-content/uploads/2021/05/Mon-ngon-Ha-Long-1024x1024.png" height="100" width="100" alt=""></a>
+                            </div>
+                            <div class="col-md-8">
+                                <a class="text-uppercase" href="#"><h4>Top các món ăn ngon tại Hạ Long nghe là "THÈM" ngay lập tức!</h4></a>
+                            </div>
+                        </div>
+                        <div class="box row">
+                            <div class="col-md-4">
+                                <a href="#"><img src="https://reviewtop.vn/wp-content/uploads/2021/04/30-mon-an-ngon-nhat-the-gioi-1.jpg" height="100" width="100" alt=""></a>
+                            </div>
+                            <div class="col-md-8">
+                                <a class="text-uppercase" href="#"><h4>30 Món ăn ngon nhất thế giới, món ăn Việt Nam có góp mặt?</h4></a>
+                            </div>
+                        </div>
+                        <div class="box row">
+                            <div class="col-md-4">
+                                <a href="#"><img src="https://cdn.eva.vn/upload/1-2022/images/2022-03-06/extra_large/collage-1646522538-32-width640height480.jpeg" height="100" width="100" alt=""></a>
+                            </div>
+                            <div class="col-md-8">
+                                <a class="text-uppercase" href="#"><h4>Cuối tuần "đổi gió", vợ làm 5 món cuốn tươi ngon, dễ ăn nhâm nhi đã miệng</h4></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="box-us col-md-12">
+                <div class="top">
+                    <div class="left col-md-6">
+                        <img src="https://themify.me/demo/themes/ultra-ristorante/files/2019/09/italian-pizza-pepperoni.jpg" width="500px" alt="">
+                    </div>
+                    <div class="right col-md-6">
+                        <a href=""><h2 class="text-uppercase">Story</h2></a>
+                        <p>Để tôn vinh tình yêu của Toronto dành cho ẩm thực và văn hóa Ý, Ultra Ristorante giới thiệu các món ăn truyền thống của Ý được dẫn dắt từ nguyên liệu.
+                            Cam kết của họ đối với các nguyên liệu đẹp mắt và các món ăn đóng vai trò là thực phẩm tốt cho mắt và đau bụng là thương hiệu của Bếp trưởng Marco Massi.</p>
+                        <p>Ultra Ristorante là người bốn lần đoạt giải Nhà hàng Ý tốt nhất trong Giải thưởng Nhà hàng của Tạp chí Toronto.
+                            Ristorante là một quán ăn thanh lịch, cổ điển và ấm áp, với dịch vụ chào đón và chu đáo. </p>
+                        <p>Mở cửa phục vụ bữa trưa và bữa tối, với thực đơn ăn uống tại quầy bar và phòng riêng,
+                            Ristorante có thể mang đến một loạt các trải nghiệm ăn uống từ bữa trưa công sở đến đồ uống sau giờ làm việc và các sự kiện trang trọng.</p>
+                    </div>
+                </div>
+                <div class="bot">
+                    <img src="https://themify.me/demo/themes/ultra-ristorante/files/2019/09/italian-spaghetti-600x343.jpg" width="500px" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container row">
+            <div class="col-md-6">
+                <div class="contact text-center">
+                    <img src="imgs/logo.png" alt="">
+                    <div class="contact-add">
+                        <i class="stk-location ti-location-pin"></i>
+                        <p class="stk-text">Số 8, Tôn Thất Tuyết, Mỹ Đình, Từ Liêm, Hà Nội</p>
+                    </div>
+                    <div class="contact-tel">
+                        <i class="stk-headphone ti-headphone-alt"></i>
+                        <p class="stk-text">01234556688 - 0987456321</p>
+                    </div>
+                    <div class="contact-email">
+                        <i class="stk-email ti-email"></i>
+                        <a href="#"><p class="stk-text">foodblog@gmail.com</p></a>
+                    </div>
+                    <div class="contact-web">
+                        <i class="stk-world ti-world"></i>
+                        <a href="#"><p class="stk-text">foodblog.com</p></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="box-map text-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3724.0966092835106!2d105.7801080148544!3d21.0288200859984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1646511634083!5m2!1svi!2s"
+                            width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="sticky text-center">
+                <div class="box-stk">
+                    <a href="#"><i class="stk-face ti-facebook"></i></a>
+                </div>
+                <div class="box-stk">
+                    <a href="#"><i class="stk-you ti-youtube"></i></a>
+                </div>
+                <div class="box-stk">
+                    <a href="#"><i class="stk-ins ti-instagram"></i></a>
+                </div>
+                <div class="box-stk">
+                    <a href="#"><i class="stk-twit ti-twitter"></i></a>
+                </div>
+            </div>
+            <div class="license text-center">
+                <p>© 2022 FoodBlog. All rights. Designed and Developed by Team Six</p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        function active(){
+            var p_active = document.getElementById("active");
+            p_active.style.color = "#bb942f";
+            p_active.style.transform = "scale(1.2)";
+        }
+        function block_search(){
+            var b_ipsearch = document.getElementById("s-text");
+            b_ipsearch.style.display = "block";
+            var n_searchbtn = document.getElementById("s-icon");
+            n_searchbtn.style.display = "none";
+        }
+        function none_search(){
+            var b_searchbtn = document.getElementById("s-icon");
+            b_searchbtn.style.display = "block";
+            var n_ipsearch = document.getElementById("s-text");
+            n_ipsearch.style.display = "none";
+        }
+    </script>
 </body>
 </html>

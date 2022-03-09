@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Blogs Ẩm thực-Foreign Cuisine</title>
+    <title>Food Blogs-Foreign Cuisine</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -15,13 +15,11 @@
 <body>
 <header class="header">
     <div class="container">
-        <div class="logo">
+        <div class="logo col-md-3">
             <a class="imglg" href="#"><img src="imgs/logo.png" alt="" width="800px"></a>
-            <span><img class="imglg1" src="imgs/logo1.png" alt="" width="90px"></span>
-            <span><img class="imglg2" src="imgs/logo2.png" alt="" height="90px"></span>
         </div>
-        <div class="col-md-12 text-center">
-            <ul id="nav">
+        <div class="col-md-9">
+            <ul id="nav" class="col-md-9">
                 <li><a href="#">Home</a></li>
                 <li><a class="active-c" href="#">
                     Cuisine
@@ -36,16 +34,21 @@
                 <li><a href="#">Kitchen Tips</a></li>
                 <li><a href="#">About us</a></li>
             </ul>
-            <div class="search">
-                <button class="search-btn" type="submit"><i class="ti-search"></i></button>
+            <div class="search col-md-3" id="s-icon" onclick="block_search()">
+                <button class="search-btn" type="submit" title="Search"><i class="ti-search"></i></button>
             </div>
-        </div>
-
-        <div class="box">
-            <img src="imgs/foreign/am-thuc-the-gioi.jpg" width="1200px" alt="">
+            <div class="search col-md-3" id="s-text" style="display: none;">
+                <input class="ip-search" type="text" name="search" placeholder="Search...">
+                <a class="s-icon" href="#">
+                    <i class="ti-search" onclick="none_search()" title="Search"></i>
+                </a>
+            </div>
         </div>
     </div>
 </header>
+<div class="container" style="margin-top: 120px;">
+    <img src="imgs/foreign/am-thuc-the-gioi.jpg" width="1200px" alt="">
+</div>
 <section class="section main">
     <div class="container">
         <article class="content">
@@ -147,12 +150,111 @@
         </article>
         <aside class="sidebar">
             <div class="sidebar-block">
-                <div class="face-fp">
-                    <h1 class="">Facebook Fanpage</h1>
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faptech.fpt&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                            width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                </div>
+                <div class="hashtag row">
+                    <h3 class="text-uppercase" style="color: red;border-bottom: 2px solid red;">Popular Tags</h3>
+                    <div class="tag col-md-3 text-center">
+                        <a href="#">#Food</a>
+                    </div>
+                    <div class="tag col-md-3 text-center">
+                        <a href="#">#banhmy</a>
+                    </div>
+                    <div class="tag col-md-3 text-center">
+                        <a href="#">#haisan</a>
+                    </div>
+                    <div class="tag col-md-3 text-center">
+                        <a href="#">#banh</a>
+                    </div>
 
+                    <div class="tag col-md-6 text-center">
+                        <a href="#">#breakfast</a>
+                    </div>
+                    <div class="tag col-md-6 text-center">
+                        <a href="#">#photooftheday</a>
+                    </div>
+                    <div class="tag col-md-3 text-center">
+                        <a href="#">#hungry</a>
+                    </div>
+                    <div class="tag col-md-3 text-center">
+                        <a href="#">#eat</a>
+                    </div>
+                    <div class="tag col-md-3 text-center">
+                        <a href="#">#foodgasm</a>
+                    </div>
+                    <div class="tag col-md-3 text-center">
+                        <a href="#">#dinner</a>
+                    </div>
+                    <div class="tag col-md-4 text-center">
+                        <a href="#">#sweettooth</a>
+                    </div>
+                    <div class="tag col-md-4 text-center">
+                        <a href="#">#pho</a>
+                    </div>
+                    <div class="tag col-md-4 text-center">
+                        <a href="#">#noodle</a>
+                    </div>
+                </div>
+                <div class="highlights row">
+                    <h3 class="text-uppercase" style="color: red;border-bottom: 2px solid red;">Highlights</h3>
+                    <div class="box col-md-12">
+                        <a href="https://www.youtube.com/watch?v=Ij5roabRbdQ"><img src="https://www.cuisine.co.nz/wp-content/uploads/2021/12/CGFA_Insta-page-square_Finalists-part-one-1-1024x1024-1.jpg" alt=""></a>
+                    </div>
+                    <div class="box row">
+                        <div class="col-md-4">
+                            <a href="#"><img src="imgs/vietnam/vietnam1.jpg" height="100" width="100" alt=""></a>
+                        </div>
+                        <div class="col-md-8">
+                            <a class="text-uppercase" href="#"><h4>Đặc trưng của ẩm thực Việt Nam trong lòng khách quốc tế</h4></a>
+                        </div>
+                    </div>
+                    <div class="box row">
+                        <div class="col-md-4">
+                            <a href="#"><img src="imgs/vietnam/vietnam4.jpg" height="100" width="100" alt=""></a>
+                        </div>
+                        <div class="col-md-8">
+                            <a class="text-uppercase" href="#"><h4>Phở - Một thứ quà đặc biệt của Hà Nội</h4></a>
+                        </div>
+                    </div>
+                    <div class="box row">
+                        <div class="col-md-4">
+                            <a href="#"><img src="imgs/foreign/foreign10.gif" height="100" width="100" alt=""></a>
+                        </div>
+                        <div class="col-md-8">
+                            <a class="text-uppercase" href="#"><h4>Ngọt ngào nhất thế giới với Socola Bỉ</h4></a>
+                        </div>
+                    </div>
+                    <div class="box row">
+                        <div class="col-md-4">
+                            <a href="#"><img src="https://dalatpalace.vn/wp-content/uploads/2020/08/an-gi-o-da-lat-22-1024x576.jpg" height="100" width="100" alt=""></a>
+                        </div>
+                        <div class="col-md-8">
+                            <a class="text-uppercase" href="#"><h4>Ăn gì khi đến Đà Lạt? Những món ngon thử 1 lần sẽ khiến bạn nhớ mãi</h4></a>
+                        </div>
+                    </div>
+                    <div class="box row">
+                        <div class="col-md-4">
+                            <a href="#"><img src="https://diachiamthuc.vn/wp-content/uploads/2021/05/Mon-ngon-Ha-Long-1024x1024.png" height="100" width="100" alt=""></a>
+                        </div>
+                        <div class="col-md-8">
+                            <a class="text-uppercase" href="#"><h4>Top các món ăn ngon tại Hạ Long nghe là "THÈM" ngay lập tức!</h4></a>
+                        </div>
+                    </div>
+                    <div class="box row">
+                        <div class="col-md-4">
+                            <a href="#"><img src="https://reviewtop.vn/wp-content/uploads/2021/04/30-mon-an-ngon-nhat-the-gioi-1.jpg" height="100" width="100" alt=""></a>
+                        </div>
+                        <div class="col-md-8">
+                            <a class="text-uppercase" href="#"><h4>30 Món ăn ngon nhất thế giới, món ăn Việt Nam có góp mặt?</h4></a>
+                        </div>
+                    </div>
+                    <div class="box row">
+                        <div class="col-md-4">
+                            <a href="#"><img src="https://cdn.eva.vn/upload/1-2022/images/2022-03-06/extra_large/collage-1646522538-32-width640height480.jpeg" height="100" width="100" alt=""></a>
+                        </div>
+                        <div class="col-md-8">
+                            <a class="text-uppercase" href="#"><h4>Cuối tuần "đổi gió", vợ làm 5 món cuốn tươi ngon, dễ ăn nhâm nhi đã miệng</h4></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </aside>
     </div>
@@ -206,5 +308,25 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    function active(){
+        var p_active = document.getElementById("active");
+        p_active.style.color = "#bb942f";
+        p_active.style.transform = "scale(1.2)";
+    }
+    function block_search(){
+        var b_ipsearch = document.getElementById("s-text");
+        b_ipsearch.style.display = "block";
+        var n_searchbtn = document.getElementById("s-icon");
+        n_searchbtn.style.display = "none";
+    }
+    function none_search(){
+        var b_searchbtn = document.getElementById("s-icon");
+        b_searchbtn.style.display = "block";
+        var n_ipsearch = document.getElementById("s-text");
+        n_ipsearch.style.display = "none";
+    }
+</script>
 </body>
 </html>
